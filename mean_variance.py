@@ -38,7 +38,7 @@ def compute_std(img_list,mean_array):
         # std += np.array(r_mean,g_mean,b_mean)
     return np.sqrt(std/pixel_count)
 
-data_dir = '/home/shengwang/dataset/dataset_with_report/肺全部图片'
+data_dir = '/home/dataset_folder'
 file_list = file_list = [
     os.path.join(root, f)
     for root, _, file_list in list(os.walk(data_dir))
